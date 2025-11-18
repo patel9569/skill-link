@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <!-- Site Title-->
+    <title>Home</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="images/logohead.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Poppins:400,500,700%7CNoto+Sans:400,700"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Maps API -->
+  </head>
+  <body>
+    <div class="page-loader">
+      <div>
+        <div class="page-loader-body">
+          <div class="preloader-container">
+            <svg
+              class="item1"
+              x="0px"
+              y="0px"
+              width="60px"
+              height="60px"
+              viewbox="0 0 60 60"
+            >
+              <path
+                d="M6.541,35.989c0.524,1.795,1.25,3.526,2.169,5.15l-2.618,3.302c-0.855,1.079-0.759,2.618,0.203,3.59l4.509,4.509 c0.972,0.972,2.511,1.058,3.59,0.203l3.28-2.597c1.688,0.972,3.484,1.731,5.353,2.265l0.492,4.221 c0.16,1.368,1.314,2.394,2.682,2.394h6.379c1.368,0,2.522-1.026,2.682-2.394l0.47-4.071c2.009-0.524,3.932-1.304,5.738-2.319 l3.174,2.511c1.079,0.855,2.618,0.759,3.59-0.203l4.509-4.509c0.972-0.972,1.058-2.511,0.203-3.59l-2.468-3.131 c1.026-1.774,1.827-3.665,2.362-5.642l3.804-0.438c1.368-0.16,2.394-1.314,2.394-2.682V26.18c0-1.368-1.026-2.522-2.394-2.682 l-3.751-0.438c-0.513-1.955-1.282-3.825-2.265-5.578l2.308-2.917c0.855-1.079,0.759-2.618-0.203-3.59l-4.499-4.499 c-0.972-0.972-2.511-1.058-3.59-0.203l-2.832,2.244c-1.838-1.079-3.804-1.902-5.866-2.458L35.52,2.394 C35.36,1.026,34.206,0,32.838,0h-6.379c-1.368,0-2.522,1.026-2.682,2.394l-0.427,3.665c-2.116,0.566-4.135,1.421-6.016,2.543 l-2.939-2.329c-1.079-0.855-2.618-0.759-3.59,0.203l-4.509,4.509c-0.972,0.972-1.058,2.511-0.203,3.59l2.458,3.11 c-0.983,1.774-1.731,3.665-2.223,5.631l-3.932,0.449c-1.368,0.16-2.394,1.314-2.394,2.682v6.379c0,1.368,1.026,2.522,2.394,2.682 L6.541,35.989z M29.653,18.732c5.813,0,10.547,4.734,10.547,10.547s-4.734,10.547-10.547,10.547 c-5.813,0-10.547-4.734-10.547-10.547S23.84,18.732,29.653,18.732z"
+              ></path>
+            </svg>
+            <svg
+              class="item2"
+              x="0px"
+              y="0px"
+              width="48px"
+              height="48px"
+              viewbox="0 0 48 48"
+            >
+              <path
+                d="M41.095,7.317l-3.366-2.842c-1.036-0.876-2.565-0.833-3.548,0.096l-1.859,1.742c-1.571-0.759-3.238-1.293-4.958-1.603 L26.84,2.146c-0.267-1.325-1.496-2.244-2.843-2.137l-4.392,0.374C18.26,0.5,17.202,1.601,17.159,2.958l-0.085,2.607 c-1.688,0.609-3.281,1.443-4.734,2.49L10.117,6.58C8.985,5.832,7.478,6.046,6.602,7.082L3.759,10.47 c-0.876,1.037-0.834,2.565,0.096,3.548L5.8,16.09c-0.673,1.517-1.154,3.11-1.432,4.744L1.59,21.401 c-1.325,0.267-2.244,1.496-2.137,2.842l0.374,4.392c0.118,1.346,1.218,2.404,2.575,2.447l3.003,0.096 c0.545,1.432,1.261,2.789,2.126,4.061l-1.678,2.532c-0.748,1.133-0.534,2.639,0.502,3.516l3.366,2.842 c1.037,0.876,2.565,0.833,3.548-0.096l2.201-2.062c1.443,0.673,2.96,1.175,4.52,1.475l0.609,3.013 c0.267,1.325,1.496,2.244,2.842,2.137l4.392-0.374c1.346-0.118,2.404-1.218,2.447-2.575l0.096-2.949 c1.603-0.566,3.12-1.336,4.52-2.287l2.426,1.603c1.133,0.748,2.639,0.534,3.516-0.502l2.842-3.366 c0.876-1.037,0.833-2.565-0.096-3.548l-1.956-2.073c0.716-1.517,1.24-3.12,1.539-4.766l2.671-0.545 c1.325-0.267,2.244-1.496,2.137-2.842l-0.374-4.392c-0.118-1.346-1.218-2.404-2.575-2.447l-2.682-0.085 c-0.556-1.56-1.304-3.035-2.233-4.402l1.464-2.201C42.345,9.711,42.131,8.194,41.095,7.317z M24.543,32.706 c-4.744,0.406-8.933-3.131-9.329-7.875c-0.406-4.744,3.131-8.933,7.875-9.329c4.744-0.406,8.933,3.131,9.329,7.875 C32.824,28.122,29.287,32.311,24.543,32.706z"
+              ></path>
+            </svg>
+            <svg
+              class="item3"
+              x="0px"
+              y="0px"
+              width="40px"
+              height="40px"
+              viewbox="0 0 40 40"
+            >
+              <path
+                d="M2.427,15.569c-1.346,0.139-2.383,1.271-2.394,2.629l-0.032,2.703c-0.021,1.357,0.983,2.511,2.329,2.682l1.988,0.256 c0.331,1.208,0.801,2.362,1.41,3.452l-1.282,1.581c-0.855,1.058-0.791,2.575,0.16,3.548l1.891,1.934 c0.951,0.972,2.468,1.079,3.548,0.246l1.592-1.229c1.122,0.663,2.308,1.186,3.548,1.549l0.214,2.052 c0.139,1.346,1.272,2.383,2.629,2.394l2.704,0.032c1.357,0.021,2.511-0.983,2.682-2.329l0.246-1.945 c1.346-0.331,2.629-0.833,3.847-1.496l1.496,1.207c1.058,0.855,2.575,0.791,3.548-0.16l1.934-1.891 c0.972-0.951,1.079-2.468,0.246-3.548l-1.144-1.485c0.705-1.175,1.25-2.426,1.624-3.74l1.774-0.182 c1.346-0.139,2.383-1.272,2.394-2.629l0.032-2.704c0.021-1.357-0.983-2.511-2.329-2.682l-1.731-0.224 c-0.331-1.304-0.823-2.565-1.464-3.74l1.079-1.325c0.855-1.058,0.791-2.575-0.16-3.548l-1.891-1.934 c-0.951-0.972-2.469-1.079-3.548-0.246l-1.293,0.994c-1.218-0.737-2.522-1.304-3.889-1.688l-0.171-1.678 c-0.139-1.346-1.271-2.383-2.629-2.394L18.68,0c-1.357-0.021-2.511,0.983-2.682,2.329l-0.214,1.667 c-1.41,0.363-2.767,0.919-4.028,1.645l-1.336-1.09c-1.058-0.855-2.575-0.791-3.548,0.16L4.927,6.615 c-0.972,0.951-1.079,2.468-0.246,3.548l1.143,1.475c-0.663,1.175-1.186,2.426-1.528,3.74L2.427,15.569z M19.877,12.513 c3.879,0.043,6.988,3.238,6.946,7.117c-0.043,3.879-3.238,6.988-7.117,6.946c-3.879-0.043-6.988-3.238-6.946-7.117 C12.803,15.58,15.998,12.471,19.877,12.513z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page text-center text-md-left">
+      <!-- Page Header-->
+      <header class="page-head">
+        <div class="rd-navbar-wrap">
+          <nav
+            class="rd-navbar rd-navbar-secondary"
+            data-stick-up-clone="true"
+            data-layout="rd-navbar-fixed"
+            data-sm-layout="rd-navbar-fixed"
+            data-sm-device-layout="rd-navbar-fixed"
+            data-md-layout="rd-navbar-static"
+            data-md-device-layout="rd-navbar-fixed"
+            data-lg-layout="rd-navbar-static"
+            data-lg-device-layout="rd-navbar-static"
+            data-lg-stick-up-offset="252px"
+          >
+            <div class="rd-navbar-inner">
+              <!-- RD Navbar Panel-->
+              <div class="rd-navbar-panel">
+                <!-- RD Navbar Toggle-->
+                <button
+                  class="rd-navbar-toggle"
+                  data-rd-navbar-toggle=".rd-navbar-nav-wrap"
+                >
+                  <span></span>
+                </button>
+                <button
+                  class="rd-navbar-collapse-toggle"
+                  data-rd-navbar-toggle=".rd-navbar-collapse"
+                >
+                  <span></span>
+                </button>
+                <div class="rd-navbar-brand">
+                  <a class="brand-name" href="index.html"
+                    ><img class="brand-device"
+                    src="images/Screenshot_2024-09-19_033328-removebg-preview.png""
+                    width="229" height="58" alt="Home service" /><img
+                      class="brand-mobile"
+                      src="images/dedo.png"
+                      width="229"
+                      height="58"
+                      alt="Home service"
+                  /></a>
+                </div>
+              </div>
+              <div class="rd-navbar-collapse animated">
+                <div class="rd-navbar-collapse-items">
+                  <ul class="list-inline">
+                    <li>
+                      <div class="unit flex-row unit-spacing-xs">
+                        <div class="unit-left">
+                          <span class="icon icon-primary fa-phone"></span>
+                        </div>
+                        <div class="unit-body">
+                          <div class="title">
+                            <span class="small">CUSTOMER SUPPORT</span>
+                          </div>
+                          <h6>                          
+                            <a class="text-darker" href="tel:8709881827">123-456789</a></h6>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="unit flex-row unit-spacing-xs">
+                        <div class="unit-left">
+                          <span class="icon icon-primary fa-map-marker"></span>
+                        </div>
+                        <div class="unit-body">
+                          <div class="title">
+                            <span class="small">Address Info</span>
+                          </div>
+                          <h6>
+                            <a
+                              href="https://www.google.com/maps/place/Vivek+Janch+Kendra+(Vivek+Healthcare)/@24.8010205,85.0091533,20.59z/data=!4m14!1m7!3m6!1s0x39f32a16c272dc6b:0x526467ed7850d364!2sVivek+Janch+Kendra+(Vivek+Healthcare)!8m2!3d24.8010629!4d85.0093231!16s%2Fg%2F1tfqzv65!3m5!1s0x39f32a16c272dc6b:0x526467ed7850d364!8m2!3d24.8010629!4d85.0093231!16s%2Fg%2F1tfqzv65?entry=ttu&g_ep=EgoyMDI0MDkwOS4wIKXMDSoASAFQAw%3D%3D"
+                              >abc-*****-xyz</a
+                            >
+                          </h6>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="unit flex-row unit-spacing-xs">
+                        <div class="unit-left">
+                          <span class="icon icon-primary fa-clock-o"></span>
+                        </div>
+                        <div class="unit-body">
+                          <div class="title">
+                            <span class="small">Opening hours </span>
+                          </div>
+                          <h6>Mon - Sun : 08:00 - 18:00</h6>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="rd-navbar-collapse-items">
+                  <ul class="list-inline list-inline-lg offset-top-0">
+                    <li>
+                      <a
+                        class="ioon icon-sm icon-silver-chalice fa-facebook"
+                        href="#"
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        class="ioon icon-sm icon-silver-chalice fa-twitter"
+                        href="#"
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        class="ioon icon-sm icon-silver-chalice fa-instagram"
+                        href="https://www.instagram.com/taskexpert.in/"
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        class="ioon icon-sm icon-silver-chalice fa-google-plus"
+                        href="#"
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        class="ioon icon-sm icon-silver-chalice fa-pinterest-p"
+                        href="#"
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="rd-navbar-inner">
+              <div class="rd-navbar-nav-wrap">
+                <!-- RD Navbar Nav-->
+                <ul class="rd-navbar-nav">
+                  <li class="active"><a href="index.html">Home</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="contacts.html">Contacts</a></li>
+                  <li><a href="applied.html">Applied Services</a></li>
+                  <li><a id="signoutlink" href="login.html">Sign out</a></li>
+                  <li><a id="userlink" href="#">Username</a></li>
+                  <li><a href="register.html">CREATE NEW ACCOUNT</a></li>
+                  <li><a href="submit.html">Request a Service</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <div
+        class="swiper-container swiper-slider swiper-secondary"
+        data-autoplay="3500"
+        data-height="100vh"
+        data-min-height="300px"
+      >
+        <div class="swiper-wrapper text-center">
+          <div
+            class="swiper-slide"
+            data-slide-bg="images/AdobeStock_640024461_Preview.jpeg"
+          >
+            <div class="swiper-slide-caption">
+              <div class="container">
+                <div
+                  class="row section-100-vh align-items-sm-center justify-content-sm-center"
+                >
+                  <div
+                    class="col-xxl-8 col-md-9"
+                    data-caption-animate="fadeInDown"
+                    data-caption-delay="200"
+                  >
+                    <h1 class="text-white">Home Tuition Services</h1>
+                    <p class="h6 offset-top-30">
+                      "The convenience of home tuition combined with top-notch
+                      teaching. My child has shown tremendous improvement and
+                      gained confidence in their studies. Thank you for your
+                      dedication!"
+                    </p>
+                    <div class="group">
+                      <a class="btn btn-primary btn-form" href="services.html"
+                        >Our services</a
+                      ><a class="btn btn-dark btn-form" href="contacts.html"
+                        >Get in touch</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" data-slide-bg="images/home-02-slide-01.jpg">
+            <div class="swiper-slide-caption">
+              <div class="container">
+                <div
+                  class="row section-100-vh align-items-sm-center justify-content-sm-center"
+                >
+                  <div
+                    class="col-xxl-8 col-md-9"
+                    data-caption-animate="fadeInDown"
+                    data-caption-delay="200"
+                  >
+                    <h1 class="text-white">Professional Customer Service</h1>
+                    <p class="h6 offset-top-30">
+                      Our qualified team strives for ensuring your satisfaction,
+                      while offering the highest levels of professional service
+                      at affordable and competitive rates.
+                    </p>
+                    <div class="group">
+                      <a class="btn btn-primary btn-form" href="services.html"
+                        >Our services</a
+                      ><a class="btn btn-dark btn-form" href="contacts.html"
+                        >Get in touch</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" data-slide-bg="images/home-01-slide-01.jpg">
+            <div class="swiper-slide-caption">
+              <div class="container">
+                <div
+                  class="row section-100-vh align-items-sm-center justify-content-sm-center"
+                >
+                  <div
+                    class="col-xxl-8 col-md-9"
+                    data-caption-animate="fadeInDown"
+                    data-caption-delay="200"
+                  >
+                    <h1 class="text-white">Experienced Technicians</h1>
+                    <p class="h6 offset-top-30">
+                      Our technicians have decades of practical, in-field
+                      experience besides factory training. This means they have
+                      the knowledge and skills needed to diagnose and repair any
+                      appliance you may have.
+                    </p>
+                    <div class="group">
+                      <a class="btn btn-primary btn-form" href="services.html"
+                        >Our services</a
+                      ><a class="btn btn-dark btn-form" href="contacts.html"
+                        >Get in touch</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"><span>Prev</span></div>
+        <div class="swiper-button-next"><span>Next</span></div>
+        <div
+          class="custom-way-point custom-way-point-swiper animated"
+          data-custom-scroll-to="custom-way-point"
+        >
+          Scroll down
+        </div>
+      </div>
+      <section>
+        <div class="group" style="display: flex; justify-content: center"></div>
+        <a class="btn btn-primary btn-form" id="appli" href="submit.html">
+          Apply For Services</a
+        >
+      </section>
+
+      <style>
+        #appli {
+          animation: blinker 1.5s linear infinite;
+          color: rgb(246, 255, 0);
+          font-size: 1.1em;
+          /* Larger, responsive font size */
+          margin-bottom: 0px;
+        }
+
+        @keyframes blinker {
+          50% {
+            opacity: 0;
+          }
+        }
+        #appli {
+          display: inline-block;
+          padding: 10px 20px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          font-size: 1rem;
+          text-align: center;
+          margin-top: 50px;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 100%;
+        }
+
+        /* Use flexbox for centering */
+        section {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: auto;
+          padding: 20px;
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+          #appli {
+            font-size: 0.9rem;
+            padding: 28px 16px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          #appli {
+            font-size: 0.8rem;
+            padding: 6px 12px;
+            margin-top: 15px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+          }
+        }
+      </style>
+
+      <section
+        class="section-75 section-md-120 section-lg-120 section-xl-150"
+        id="custom-way-point"
+      >
+        <div class="container text-left">
+          <div class="row row-15 justify-content-sm-center">
+            <div class="col-md-9 col-lg-6">
+              <div
+                class="box-info-custom"
+                style="background-image: url(images/washing\ machine.jpg)"
+              >
+                <div class="box-info-custom-inner">
+                  <h5 class="box-info-custom-title">
+                    <a href="services.html">
+                      <mark class="mark"> Washing Machine Repair </mark>
+                    </a>
+                    <style>
+                      .mark {
+                        background-color: yellow;
+                        color: black;
+                        transition: transform 0.2s; /* Animation */
+                      }
+                      .mark:hover {
+                        transform: scale(9.9);
+                      }
+                    </style>
+                  </h5>
+                  <p>
+                    Whether your washing machine is front loading or top
+                    loading, our experts can provide fast and efficient repair
+                    to get it working again.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-9 col-lg-6">
+              <div
+                class="box-info-custom"
+                style="background-image: url(images/wall\ decor.webp)"
+              >
+                <div class="box-info-custom-inner">
+                  <h5 class="box-info-custom-title">
+                    <a href="services.html">
+                      <mark class="mark">Wall Decor</mark></a
+                    >
+                  </h5>
+                  <p>
+                    Be sure that you work with a team of professionals who will
+                    be able to help you every step of the way with your wall
+                    decor needs.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-9 col-lg-6">
+              <div
+                class="box-info-custom"
+                style="background-image: url(images/ref\ repair.webp)"
+              >
+                <div class="box-info-custom-inner">
+                  <h5 class="box-info-custom-title">
+                    <a href="services.html">
+                      <mark class="mark">Refrigerator Repair</mark></a
+                    >
+                  </h5>
+                  <p>
+                    Virtually every refrigerator problem can be fixed with our
+                    company services. We can fix any situation that involves
+                    refrigerators.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-9 col-lg-6">
+              <div
+                class="box-info-custom"
+                style="background-image: url(images/ac\ repair.avif)"
+              >
+                <div class="box-info-custom-inner">
+                  <h5 class="box-info-custom-title">
+                    <a href="services.html">
+                      <mark class="mark">Air Conditioner Repair</mark></a
+                    >
+                  </h5>
+                  <p>
+                    Regardless of whether you need to repair, replace or
+                    maintain your current AC system or plan to install new air
+                    conditioning, we can help.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="bg-image-filter bg-image bg-image-fixed section-xxl"
+        style="background-image: url(images/washing\ machine.jpg)"
+      >
+        <div class="container filter-inner-wrap">
+          <div class="row justify-content-sm-center text-center">
+            <div class="col-sm-10 col-md-8 col-lg-6">
+              <h2 class="text-white">
+                <span class="small text-white">affordable repair solutions</span
+                >High-Quality and Friendly<br class="d-none d-lg-block" />
+                Services at Fair Prices
+              </h2>
+              <a
+                class="btn btn-default btn-form btn-default-white"
+                href="contacts.html"
+                >Contact us</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-75 section-md-100 section-lg-120 section-xl-130">
+        <div class="container">
+          <h2>
+            <span class="small">Testimonials</span>What clients say about our
+            company
+          </h2>
+          <div class="row">
+            <div class="col-sm-12">
+              <!-- Owl Carousel-->
+              <div
+                class="owl-carousel"
+                data-autoplay="true"
+                data-items="1"
+                data-lg-items="2"
+                data-dots="true"
+                data-nav="false"
+                data-stage-padding="15"
+                data-loop="true"
+                data-margin="30"
+                data-mouse-drag="false"
+              >
+                <blockquote class="quote-default text-left">
+                  <h6>
+                    <q
+                      >“ I highly recommend this company. I had a washing
+                      machine breakdown and they had it back and running within
+                      30 minutes of service call. Thank you for such a
+                      professional work!”</q
+                    >
+                  </h6>
+                  <div class="offset-top-30 offset-md-top-45">
+                    <div class="unit flex-row align-items-sm-center">
+                      <div class="unit-left">
+                        <img
+                          class="rounded-circle"
+                          src=""
+                          width="68"
+                          height="68"
+                          alt=""
+                        />
+                      </div>
+                      <div class="unit-body">
+                        <h6><cite>Ashutosh Gupta</cite></h6>
+                        <span class="offset-top-10 small-xs"
+                          ></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </blockquote>
+                <blockquote class="quote-default text-left">
+                  <h6>
+                    <q
+                      >“Great service! The staff was so friendly and
+                      knowledgeable. They fixed my refrigerator in a timely and
+                      professional manner. Highly recommend. Thanks for a good
+                      job, guys!”</q
+                    >
+                  </h6>
+                  <div class="offset-top-30 offset-md-top-45">
+                    <div class="unit flex-row align-items-sm-center">
+                      <div class="unit-left">
+                        <img
+                          class="rounded-circle"
+                          src=""
+                          width="68"
+                          height="68"
+                          alt=""
+                        />
+                      </div>
+                      <div class="unit-body">
+                        <h6><cite>Rahul Kumar</cite></h6>
+                        <span class="offset-top-10 small-xs"
+                          ></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </blockquote>
+                <!-- Add other testimonials similarly -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Owl Carousel Initialization Script -->
+      <script>
+        $(document).ready(function () {
+          $(".owl-carousel").owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 30,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            dots: true,
+            nav: false,
+            responsive: {
+              0: { items: 1 },
+              768: { items: 2 },
+            },
+          });
+        });
+      </script>
+
+      <section class="section-75 section-md-100 section-lg-120 section-xl-130">
+        <div class="container">
+          <h2>
+            <span class="small">Available Services</span> Our Skilled
+            Professionals
+          </h2>
+          <div class="row">
+            <!-- Plumbers -->
+            <div class="col-md-12">
+              <div class="service-category-box">
+                <h4
+                  onclick="toggleList('plumber-list')"
+                  class="service-category"
+                >
+                  <i class="fas fa-wrench"></i> Plumbers (2)
+                </h4>
+                <div id="plumber-list" class="service-list">
+                  <div class="service-box">
+                    <img src="images/rakesh p.jpeg" alt="Plumber" class="service-img" />
+                    <h5>Ramesh Verma</h5>
+                    <p>Expert in pipe fittings and leak repairs.</p>
+                    <p>⭐ 4.8 (120 Reviews)</p>
+                    <button class="call-btn">Apply Now</button>
+                  </div>
+                  <div class="service-box">
+                    <img src="images/rakesh p.jpeg" alt="Plumber" class="service-img" />
+                    <h5>Vikas Gupta</h5>
+                    <p>Specialist in bathroom and kitchen plumbing.</p>
+                    <p>⭐ 4.6 (90 Reviews)</p>
+                    <button class="call-btn">Apply Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Electricians -->
+            <div class="col-md-12">
+              <div class="service-category-box">
+                <h4
+                  onclick="toggleList('electrician-list')"
+                  class="service-category"
+                >
+                  <i class="fas fa-bolt"></i> Electricians (2)
+                </h4>
+                <div id="electrician-list" class="service-list">
+                  <div class="service-box">
+                    <img
+                      src="images/rakesh p.jpeg"
+                      alt="Electrician"
+                      class="service-img"
+                    />
+                    <h5>Amit Sharma</h5>
+                    <p>Specialist in wiring and electrical repairs.</p>
+                    <p>⭐ 4.7 (98 Reviews)</p>
+                    <button class="call-btn">Apply Now</button>
+                  </div>
+                  <div class="service-box">
+                    <img
+                      src="images/rakesh p.jpeg"
+                      alt="Electrician"
+                      class="service-img"
+                    />
+                    <h5>Sunil Mehta</h5>
+                    <p>Expert in house wiring and power setup.</p>
+                    <p>⭐ 4.9 (110 Reviews)</p>
+                    <button class="call-btn">Apply Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Wall Experts -->
+            <div class="col-md-12">
+              <div class="service-category-box">
+                <h4
+                  onclick="toggleList('wall-expert-list')"
+                  class="service-category"
+                >
+                  <i class="fas fa-paint-roller"></i> Wall Experts (2)
+                </h4>
+                <div id="wall-expert-list" class="service-list">
+                  <div class="service-box">
+                    <img
+                      src="images/rakesh p.jpeg"
+                      alt="Wall Expert"
+                      class="service-img"
+                    />
+                    <h5>Sandeep Yadav</h5>
+                    <p>Proficient in wall painting and decor.</p>
+                    <p>⭐ 4.6 (85 Reviews)</p>
+                    <button class="call-btn">Apply Now</button>
+                  </div>
+                  <div class="service-box">
+                    <img
+                      src="images/rakesh p.jpeg"
+                      alt="Wall Expert"
+                      class="service-img"
+                    />
+                    <h5>Rajesh Kumar</h5>
+                    <p>Specialist in waterproofing and plastering.</p>
+                    <p>⭐ 4.5 (80 Reviews)</p>
+                    <button class="call-btn">Apply Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tuition Teachers -->
+            <div class="col-md-12">
+              <div class="service-category-box">
+                <h4
+                  onclick="toggleList('tuition-teacher-list')"
+                  class="service-category"
+                >
+                  <i class="fas fa-book"></i> Tuition Teachers (3)
+                </h4>
+                <div id="tuition-teacher-list" class="service-list">
+                  <div class="service-box">
+                    <img
+                      src="images/rakesh p.jpeg"
+                      alt="Tuition Teacher"
+                      class="service-img"
+                    />
+                    <h5>Priya Singh</h5>
+                    <p>Experienced in Math and Science coaching.</p>
+                    <p>⭐ 4.9 (150 Reviews)</p>
+                    <button class="call-btn">Apply Now</button>
+                  </div>
+                  <div class="service-box">
+                    <img
+                      src="images/rakesh p.jpeg"
+                      alt="Tuition Teacher"
+                      class="service-img"
+                    />
+                    <h5>Neha Verma</h5>
+                    <p>Expert in English and Social Studies.</p>
+                    <p>⭐ 4.7 (130 Reviews)</p>
+                    <button class="call-btn">Apply Now</button>
+                  </div>
+                  <div class="service-box">
+                    <img
+                      src="images/rakesh p.jpeg"
+                      alt="Tuition Teacher"
+                      class="service-img"
+                    />
+                    <h5>Neha Verma</h5>
+                    <p>Expert in English and Social Studies.</p>
+                    <p>⭐ 4.7 (130 Reviews)</p>
+                    <button class="call-btn">Apply Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Service Area Map Section -->
+      <section class="section-75 section-md-100 section-lg-150 bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2 class="text-spacing-100">Our Service Area</h2>
+              <p class="text-width-medium text-center inset-lg-left-100 inset-lg-right-100">
+                We provide our professional home services across Gaya and surrounding areas. 
+                Check out our service coverage area below.
+              </p>
+            </div>
+          </div>
+          <div class="row offset-top-50">
+            <div class="col-lg-8 offset-lg-2">
+              <div class="google-map-container">
+                <div id="serviceAreaMap" style="width: 100%; height: 500px; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.15);"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row offset-top-30">
+            <div class="col-lg-12 text-center">
+              <div class="service-areas">
+                <h4>Areas We Serve:</h4>
+                <div class="area-tags">
+                  <span class="area-tag">Address 1</span>
+                  <span class="area-tag">Address 2</span>
+                  <span class="area-tag">Address 3</span>
+                  <span class="area-tag">Address 4</span>
+                  <span class="area-tag">Address 5</span>
+                  <span class="area-tag">Address 6</span>
+                  <span class="area-tag">Address 7</span>
+                  <span class="area-tag">Address 8</span>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <style>
+        .service-category-box {
+          background: #f8f9fa;
+          padding: 15px;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          margin-bottom: 20px;
+          transition: transform 0.3s;
+        }
+
+        .service-category-box:hover {
+          transform: scale(1.03);
+        }
+
+        .service-category {
+          cursor: pointer;
+          font-weight: bold;
+          margin-bottom: 10px;
+          text-align: center;
+          padding: 10px;
+          background-color: #1d2e41;
+          color: white;
+          border-radius: 5px;
+        }
+
+        .service-list {
+          display: none;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          margin-top: 10px;
+        }
+
+        .service-box {
+          flex: 1 1 calc(50% - 20px); /* Two boxes per row */
+          max-width: calc(50% - 20px);
+          background: #fff;
+          padding: 15px;
+          text-align: center;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s;
+          margin-top: 15px;
+        }
+
+        .service-box:hover {
+          transform: scale(1.05);
+        }
+
+        .service-img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          margin-bottom: 10px;
+        }
+
+        .call-btn {
+          background-color: #0e900c;
+          color: white;
+          padding: 8px 12px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          margin-top: 10px;
+        }
+
+        .call-btn:hover {
+          background-color: #579160;
+        }
+
+        @media (max-width: 768px) {
+          .service-box {
+            flex: 1 1 100%; /* Full width on mobile */
+            max-width: 100%;
+          }
+        }
+      </style>
+
+      <script>
+        function toggleList(id) {
+          var lists = document.querySelectorAll(".service-list");
+          lists.forEach((list) => {
+            if (list.id !== id) {
+              list.style.display = "none";
+            }
+          });
+
+          var selectedList = document.getElementById(id);
+          selectedList.style.display =
+            selectedList.style.display === "flex" ? "none" : "flex";
+        }
+      </script>
+
+    <!-- WhatsApp button -->
+    <a
+      href="https://www.whatsapp.com/"
+      class="whatsapp-button"
+      target="_blank"
+    >
+      <i class="fab fa-whatsapp"></i>
+      <span class="whatsapp-text">WhatsApp Us</span>
+    </a>
+
+    <style>
+      /* WhatsApp button styling */
+      .whatsapp-button {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        background-color: #326645;
+        color: white;
+        padding: 10px 20px;
+        padding-right: 50px;
+        border-radius: 20px;
+        font-size: 18px;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        display: flex;
+        align-items: center;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        text-decoration: none;
+      }
+
+      .whatsapp-button i {
+        margin-right: 10px;
+      }
+
+      .whatsapp-button:hover {
+        background-color: #22bb5b;
+        color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+      }
+      .whatsapp-text {
+        font-size: 16px;
+      }
+
+      /* Service Area Map Styles */
+      .service-areas {
+        margin-top: 30px;
+      }
+
+      .area-tags {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 15px;
+      }
+
+      .area-tag {
+        background: linear-gradient(135deg, #007bff, #0056b3);
+        color: white;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: 500;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+      }
+
+      .area-tag:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        background: linear-gradient(135deg, #0056b3, #004085);
+      }
+
+      .google-map-container {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .google-map-container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(45deg, rgba(0,123,255,0.1), rgba(0,86,179,0.1));
+        pointer-events: none;
+        z-index: 1;
+      }
+    </style>
+    <div class="snackbars" id="form-output-global"></div>
+    
+    <script src="js/maps.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      // TODO: Implement authentication without Firebase
+      // For now, check localStorage for user session
+      window.addEventListener("DOMContentLoaded", () => {
+        const user = JSON.parse(localStorage.getItem("user")) || JSON.parse(sessionStorage.getItem("user"));
+        const signoutlink = document.getElementById("signoutlink");
+        const userlink = document.getElementById("userlink");
+
+        if (user) {
+          // User is logged in
+          signoutlink.textContent = "Sign out";
+          signoutlink.href = "#";
+          signoutlink.onclick = () => {
+            localStorage.removeItem("user");
+            sessionStorage.removeItem("user");
+            localStorage.removeItem("keepLoggedIn");
+            window.location.reload();
+          };
+          userlink.textContent = user.username || user.email;
+          userlink.href = "#";
+        } else {
+          // User is not logged in
+          signoutlink.textContent = "Sign in";
+          signoutlink.href = "login.html";
+          userlink.style.display = "none";
+        }
+      });
+    </script>
+    <script>
+      // Function to toggle service lists
+      function toggleList(listId) {
+        const list = document.getElementById(listId);
+        if (list.style.display === 'none' || list.style.display === '') {
+          list.style.display = 'flex';
+        } else {
+          list.style.display = 'none';
+        }
+      }
+    </script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

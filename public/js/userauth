@@ -1,0 +1,48 @@
+// Handle authentication state
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    // User is signed in
+    const userInfo = {
+      displayName: user.displayName,
+      email: user.email,
+      photoURL: user.photoURL,
+      uid: user.uid,
+    };
+    // Save userInfo to local storage or use a global state
+    localStorage.setItem("userInfo", JSON.stringify(userInfo));
+    displayUserInfo(userInfo);
+  } else {
+    // User is signed out
+    localStorage.removeItem("userInfo");
+    displayUserInfo(null);
+  }
+});
+function displayUserInfo(userInfo) {
+  const userInfoContainer = document.getElementById("userInfoContainer");
+  if (userInfo) {
+    userInfoContainer.innerHTML = `
+      <p>Welcome, ${userInfo.displayName || "User"}!</p>
+      <p>Email: ${userInfo.email}</p>
+      <img src="${userInfo.photoURL}" alt="Profile Picture" />
+      <button id="logoutButton">Logout</button>
+    `;
+    document.getElementById("logoutButton").addEventListener("click", () => {
+      auth
+        .signOut()
+        .then(() => {
+          console.log("User signed out");
+        })
+        .catch((error) => {
+          console.error("Sign out error", error);
+        });
+    });
+  } else {
+    userInfoContainer.innerHTML = "<p>Please log in</p>";
+  }
+}
+
+// On page load, check local storage and display user info
+document.addEventListener("DOMContentLoaded", () => {
+  const storedUserInfo = JSON.parse(localStorage.getItem("userInfo"));
+  displayUserInfo(storedUserInfo);
+});
